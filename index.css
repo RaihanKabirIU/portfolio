@@ -116,3 +116,59 @@
     color: #ba1111;
     font-style: bold;
   }
+  /* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .profile-section img {
+    width: 120px;
+  }
+
+  .youtube-video iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .appearance-gallery {
+    gap: 15px;
+  }
+
+  .appearance-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .appearance-item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-section img {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .youtube-video iframe {
+    height: 180px;
+  }
+
+  .appearance-caption {
+    font-size: 11px;
+  }
+}
