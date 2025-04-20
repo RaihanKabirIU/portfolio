@@ -1,0 +1,174 @@
+  /* ========== PROFILE SECTION ========== */
+  .profile-section {
+    padding: 40px 0;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .profile-section img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+/* ========== BODY SECTION ========== */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 40px auto;
+    gap: 5%;
+  }
+  
+  .left-column,
+  .right-column {
+    width: 48%;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  ul.skills-list {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .experience-item,
+  .education-item,
+  .certificate-item,
+  .project-card,
+  .article-item {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 2px solid #885ecc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .contact-info li {
+    list-style-type: none;
+    margin: 5px 0;
+  }
+  
+  .contact-info a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .youtube-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+  
+  .youtube-video iframe {
+    width: 300px;
+    height: 170px;
+    border: none;
+  }
+
+
+
+/* ----------------------Talks, testimonial, achievement section ------------------ */
+.appearance-section {
+    margin-top: 20px;
+  }
+  
+  .appearance-gallery {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+  }
+  
+  .appearance-gallery::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .appearance-gallery::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
+  .appearance-item {
+    flex: 0 0 auto;
+    text-align: center;
+    max-width: 450px;
+  }
+  
+  .appearance-item img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .appearance-caption {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #ba1111;
+    font-style: bold;
+  }
+  /* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .profile-section img {
+    width: 120px;
+  }
+
+  .youtube-video iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .appearance-gallery {
+    gap: 15px;
+  }
+
+  .appearance-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .appearance-item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-section img {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .youtube-video iframe {
+    height: 180px;
+  }
+
+  .appearance-caption {
+    font-size: 11px;
+  }
+}
